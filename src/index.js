@@ -1,7 +1,3 @@
-import Multiselect from './Multiselect'
-import multiselectMixin from './multiselectMixin'
-import pointerMixin from './pointerMixin'
+import multipleDatepicker from './datepicker/index'
 
-export default Multiselect
-
-export { Multiselect, multiselectMixin, pointerMixin }
+export default multipleDatepicker

@@ -12,15 +12,15 @@ const env = process.env.NODE_ENV === 'testing'
   : config.bundle.env
 
 base.entry = {
-  'VueMultiselect': './src/index.js'
+  'multipleDatepicker': './src/index.js'
 }
 
 const webpackConfig = merge(base, {
   output: {
     path: config.bundle.assetsRoot,
     publicPath: config.bundle.assetsPublicPath,
-    filename: 'vue-multiselect.min.js',
-    library: 'VueMultiselect',
+    filename: 'vue-multiple-datepicker.min.js',
+    library: 'multipleDatepicker',
     libraryTarget: 'umd'
   },
   module: {
@@ -38,7 +38,7 @@ const webpackConfig = merge(base, {
       compress: { warnings: false }
     }),
     new ExtractTextPlugin({
-      filename: 'vue-multiselect.min.css'
+      filename: 'vue-multiple-datepicker.min.css'
     }),
     new OptimizeCSSPlugin()
   ]

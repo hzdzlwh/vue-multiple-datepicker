@@ -1,3 +1,5 @@
 src/prism.js
 config/*.js
 *.pug
+src/utils/*
+src/datepicker/*

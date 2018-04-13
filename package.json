@@ -1,6 +1,6 @@
 {
-  "name": "vue-multiselect",
-  "version": "2.1.0",
+  "name": "vue-multiple-datepicker",
+  "version": "1.2.2",
   "private": false,
   "scripts": {
     "test": "vue-cli-service test",
@@ -86,24 +86,24 @@
     "webpack-merge": "^2.6.1"
   },
   "license": "MIT",
-  "homepage": "https://shentao.github.io/vue-multiselect/",
-  "main": "dist/vue-multiselect.min.js",
-  "author": "Damian Dulisz <damian.dulisz@gmail.com>",
+  "homepage": "https://github.com/hzdzlwh/vue-multiple-datepicker.git",
+  "main": "dist/vue-multiple-datepicker.min.js",
+  "author": "lwh <742783121@qq.com>",
   "jsnext:main": "dist/vue-multiselect.min.js",
   "bugs": {
-    "url": "https://github.com/shentao/vue-multiselect/issues"
+    "url": "https://github.com/hzdzlwh/vue-multiple-datepicker.git/issues"
   },
   "jspm": {
-    "main": "dist/vue-multiselect.min.js",
+    "main": "dist/vue-multiple-datepicker.min.js",
     "registry": "npm",
     "format": "esm"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shentao/vue-multiselect.git"
+    "url": "git+https://github.com/hzdzlwh/vue-multiple-datepicker.git"
   },
-  "description": "Multiselect component for vue.js",
-  "unpkg": "dist/vue-multiselect.min.js",
+  "description": "multiple datepicker component for vue.js",
+  "unpkg": "dist/vue-multiple-datepicker.min.js",
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
