@@ -35,7 +35,10 @@ import { formatDate } from './utils.js';
 export default {
     name: 'calendar',
     props: {
-        defaultValue: [String, Date],
+        defaultValue: {
+            type: String,
+            default: ''
+        },
         disabledDate: Function
     },
     data() {
@@ -47,10 +50,12 @@ export default {
         }
     },
     created() {
-        if (this.date.length < 1 && !this.year) {
-            this.year = new Date().getFullYear();
-            this.month = new Date().getMonth();
-        }
+        // if (this.date.length < 1 && !this.year) {
+        //     this.year = new Date().getFullYear();
+        //     this.month = new Date().getMonth();
+        // }
+        this.year = new Date().getFullYear();
+        this.month = new Date().getMonth();
     },
     computed: {
         rows() {
@@ -116,6 +121,17 @@ export default {
         }
     },
     watch: {
+        defaultValue: {
+            handler(newVal, oldVal) {
+                if (newVal && !oldVal && !this.date.length) {
+                    newVal.split(',').forEach(date => {
+                        this.date.push(new Date(date));
+                    });
+                    this.$emit('changeDate', this.date);
+                }
+            },
+            immediate: true
+        }
         // date(newVal) {
         //     const today = new Date();
         //     this.year = newVal ? newVal.getFullYear() : today.getFullYear();

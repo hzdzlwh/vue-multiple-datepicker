@@ -8,7 +8,7 @@
                 @focus="handleFocus"
                 v-model="dateStr"/>
         </span>
-        <calendar v-show="calendarVisible" @select="handleSelect" @changeDate="handleChangeDate"></calendar>
+        <calendar v-show="calendarVisible" @select="handleSelect" @changeDate="handleChangeDate" :defaultValue="value"></calendar>
     </span>
 </template>
 
