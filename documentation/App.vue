@@ -13,7 +13,7 @@ export default {
     name: 'app',
     data() {
         return {
-            dateValue: '2018-05-10,2018-05-11'
+            dateValue: ''
         }
     },
     components: {
